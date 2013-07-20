@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>mobiCost | Know the cost before you cost</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -40,7 +40,6 @@
       }
 
       /* All form factors */
-
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -77,6 +76,37 @@
         color: white;
       }
 
+      /* mobiCost spesicfic*/
+      .mobiCost-cost {
+            color: #AEE40D;
+        }
+        .mobiCost-mobi {
+            color: #FFDC14;
+        }
+        .mobiCost-name {
+            text-shadow: 1px 1px 1px #000;
+        }
+        .cost-green {
+            color: #99CE0D;
+        }
+        .cost-red {
+            color: #DB2800;
+        }
+        .subheading {
+            color: #686868;
+        }
+        .brand > .mobiCost-name > .mobiCost-cost {
+            color: #5C892E;
+        }
+            .brand > .mobiCost-name:hover > .mobiCost-cost {
+                color: #AEE40D;
+            }
+        .brand>.mobiCost-name>.mobiCost-mobi {
+            color: #949023;
+        }
+            .brand > .mobiCost-name:hover > .mobiCost-mobi {
+                color: #FFDC14;
+            }
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
@@ -109,17 +139,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#" class="brand">Bitstarter</a>
+          <a href="#" class="brand"><span class="mobiCost-name"><span class="mobiCost-mobi">mobi</span><span class="mobiCost-cost">Cost</span></span></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">about</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div> <!-- .nav - collapse -->
+          </div> <!-- .nav - collapse end-->
         </div>
       </div>
-    </div> <!-- end of header -->
+    </div> 
+    <!-- end of header -->
+
     <!-- we use row-fluid inside containers to achieve a resizable layout -->
     <!-- blogs.endjin.com/2012/04/tips-for-implementing-responsive-designs-using-bootstrap -->
     <!-- http://stackoverflow.com/a/12270322 -->
@@ -127,16 +159,20 @@
       <!-- font and paired font of .heading/.subheading and body from google fonts -->
       <!-- www.google.com/fonts/specimen/ubuntu -->
       <!-- www.google.com/fonts/speciment/ubuntu#pairings -->
+
+    <!--=============== product headings =================-->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1><span class="mobiCost-name"><span class="mobiCost-mobi">mobi</span><span class="mobiCost-cost">Cost</span></span></h1>
         </div>
       </div>
       <div class="row-fluid subheading">
         <div class="span12">
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Know the <span class="cost-green">Cost</span> before you <span class="cost-red">Cost</span></p>
         </div>
       </div>
+<!--====================== end product headings =================-->
+
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
           <img src="http://placehold.it/480x300" class="img-polaroid">
@@ -173,7 +209,7 @@
           </div>
           <div class="span6 offset3 order">
             <!-- standard bootstrap button -->
-            <button class="btn btn-success btn-large">Proorder</button>
+            <button class="btn btn-success btn-large">Preorder</button>
           </div>
           <div class="span8 offset2 social">
             <!-- social buttons are not included in defalut bootstrap -->
