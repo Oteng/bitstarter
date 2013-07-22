@@ -19,7 +19,6 @@
             /*background-image: linear-gradient(to bottom, rgb(241, 196, 120), rgb(224, 146, 77))*/
             background-image: linear-gradient(to bottom, rgb(224, 215, 216), rgb(170, 147, 149))
         }
-
           /* Large desktop */
       @media (min-width: 980px) { 
         body {
@@ -99,7 +98,8 @@
 
       /* Video pitch and Action */
       .pitch {
-        padding: 2.5% 0%;
+        /*background-color: rgb(255,255,255);*/
+
       }
       .order {
         padding: 2% 0%;
@@ -151,7 +151,16 @@
             }
 
         .social {
-           
+           margin: 2%;
+           margin-left: auto;
+           margin-right: auto;
+           /*background-color: rgb(170, 147, 149);*/
+           width: 90%;
+           padding-top: 5px;
+           padding-bottom: 1%;
+           /*border-radius: 5px;*/
+           border-top: 1px solid rgba(170,147,149,.5);
+           border-bottom: 1px solid rgba(170,147,149,.5);
         }
         
         .item img {
@@ -203,7 +212,77 @@
         .mobiCost {
             padding-bottom: 10%;
         }
-        
+        .carousel {
+            margin-bottom: 0;
+        }
+        .pitch .container {
+            background-color: white;
+        }
+        .featbtn {
+            width: 100%;
+            padding: 2%;
+            background-color: white;
+            background-image: none;
+            border: none;
+            border-bottom: 1px solid rgba(170,147,149,.6);
+            border-top: 1px solid rgba(170,147,149,.6);
+            box-shadow: none;
+            border-radius: 0;
+        }
+        .featbtn:hover {
+            background-color: rgba(170,147,149,.6)
+        }
+        .featbtn-text {
+            font-size: 200%;
+
+        }
+        .section1, .section2, .section3,.section4, .section5 {
+            border-bottom: 1px solid rgba(170,147,149,.6);
+            color: rgb(170, 147, 149);
+        }
+        .section5 {
+            text-align: center;
+        }
+            .section5 h1 {
+                color: rgb(170, 147, 149);
+                text-shadow: 1px 1px 1px #000;
+                font-family: Ubuntu,"HelveticaLight","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+                font-size: 300%;
+                font-weight: 100;
+            }
+            .section5 p {
+                color: rgb(170, 147, 149);
+                font-family: UUbuntu,"HelveticaLight","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+                
+            }
+        .busSub {
+            font-size: 200%
+        }
+        .feat {
+            color: rgb(170, 147, 149);
+                text-shadow: 1px 1px 1px #000;
+                font-family: Ubuntu,"HelveticaLight","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+                font-size: 200%;
+                font-weight: 100;
+        }
+        .pledged {
+            color: rgb(149,206,136);
+            font-size: 80%
+        }
+        .pp {
+            color: rgb(170, 147, 149);
+            font-size: 50%
+        }
+        .features {
+            text-align: center;
+            border-bottom: 1px solid rgba(170,147,149,.6);
+        }
+       .row-fluid .back-btn {
+            margin: 0;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
@@ -325,7 +404,7 @@
   
          <!--============== crowdfunder buttons ===========-->
         <div class="row-fluid social">
-            <div class="span12 ">
+            <div class="span12">
                 <p>Let the world know we exsit and that together we can change the world</p>
             
              <!--social buttons are not included in defalut bootstrap-->
@@ -341,7 +420,7 @@
         <!-- we define a new 'action' div to contain statistics, order and share buttons. -->
 
         <!--=============== product ==============-->
-        <div class="row">
+        <!--<div class="row">
             <div class="span3">
                 <h1>mobiShop</h1>
                 <p>How much will it cost</p>
@@ -374,15 +453,15 @@
                     <button class="btn" type="button">Search</button>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!--============ end product ================-->
 
-        <div class="span5 actions">
+      <!--  <div class="span5 actions">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look  -->
-                <!-- different in horizontal and vertical layouts, illustrating media -->
+                <!-- linediv-l and linediv-r give dividing lines that look 
+                <!-- different in horizontal and vertical layouts, illustrating media 
                 <div class='linediv-l'>
                   <h3>1000</h3><p>backers</p>
                 </div>
@@ -400,27 +479,36 @@
             </div>
           </div>
           <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
+            <!-- Bootstrap progress bar 
             <div class="thermometer progress active">
               <div class="bar bar-success" style="width: 60%;"></div>
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
-            <!-- standard bootstrap button -->
+            <!-- standard bootstrap button 
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
          <!-- <div class="span8 offset2 social">
             <!-- social buttons are not included in defalut bootstrap 
             <button class="btn btn-twitter"><i class="icon-twitter"></i>  |  Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i>  |  Facebook</button>
-          </div>-->
+          </div>--
         </div>
-      </div>
+      </div>-->
+        <div class="row-fluid features">
+            <div class="span12">
+                <h1>
+                   <span class="feat">Features</span>
+                    <span class="pledged"> $10,000 <span class="pp">pledged of </span>$100,000 <span class="pp">goal</span></span>
+              </h1>
+            </div>
+        </div>
       <!-- beyond this part the marketing copy begins -->
+
       <div class="row-fluid section1 ">
         <div class="span5 offset1 asset">
-          <a href="#"><img src="http://placehold.it/480x300" title="How much will it cost"/></a>
+          <a href="#"><img src="http://i.imgur.com/aRSQWqG.png"/></a>
         </div>
         <div class="span5 copy">
           <p>
@@ -429,6 +517,11 @@
 
           </p>
         </div>
+          <!--back this project buttons-->
+          <div class="span12 back-btn">
+              <button class="btn featbtn"><span class="featbtn-text">Back this feather: $100</span></button>
+
+          </div>
       </div>
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
@@ -436,15 +529,100 @@
             Lunch time always leaves you with the question: what should i eat and where can i get the best food at the right price?<br />
               Normaly you have to visit defferent restaurents and try out defferent pezas before settling on one as your favorate. This is even worsen when you are new to the plase.<br />
               Or you want to take the special someone out for a bite but you don't know if the money you have is enuth.<br />
-              Well mobiCost is here to help. Browse the menu of defferent resturents and hotels and also the cost of each food item. Find out which one is love by others and why and most of all get direction to the plase. mobiCost take control of your finances, take control of your life 
-
+              
 
           </p>
         </div>
         <div class="span5 asset">
-          <a href="#"><img src="http://placehold.it/480x300" title="find the right food at he right price"/></a>
+          <a href="#"><img src="http://i.imgur.com/oc6q54Q.png" /></a>
         </div>
+          <!--back this project buttons-->
+      <div class="span12 back-btn">
+              <button class="btn featbtn"><span class="featbtn-text">Back this feather: $100</span></button>
+
+          </div>
       </div>
+    <div class="row-fluid section3 ">
+        <div class="span5 offset1 asset">
+          <a href="#"><img src="http://i.imgur.com/QlA7tzP.png"/></a>
+        </div>
+        <div class="span5 copy">
+          <p>
+            Have you ever found yourself traving a new city or town and felt like you are been cheated by the cub drivers, Well i have and that is were mobiCost comes in. mobiCost can help you estimate the cost of your travel even before you set off.<br />
+              Choose the mode of travel, thus taxi, bus, or flight, then your starting location and your ending location and leave the rest to mobiCost. As an aside you get direction from google maps. 
+
+          </p>
+        </div>
+        <!--back this project buttons-->
+          <div class="span12 back-btn">
+              <button class="btn featbtn"><span class="featbtn-text">Back this feather: $100</span></button>
+
+          </div>
+      </div>
+        <div class="row-fluid section4">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+            Lunch time always leaves you with the question: what should i eat and where can i get the best food at the right price?<br />
+              Normaly you have to visit defferent restaurents and try out defferent pezas before settling on one as your favorate. This is even worsen when you are new to the plase.<br />
+              Or you want to take the special someone out for a bite but you don't know if the money you have is enuth.<br />
+              
+
+          </p>
+        </div>
+        <div class="span5 asset">
+          <a href="#"><img src="http://i.imgur.com/cpyFktw.png" /></a>
+        </div>
+            <!--back this project buttons-->
+          <div class="span12 back-btn">
+              <button class="btn featbtn"><span class="featbtn-text">Back this feather: $100</span></button>
+          </div>
+      </div>
+
+        <!--========= bussines features ===========-->
+        <div class="row-fluid section5">
+        <div class="span12">
+            <h1>Buessness</h1>
+            <p class="busSub">Upload your buissen's information for a full 2 years</p>
+            <p>Get access to 24 hour technical support for the 2 years
+            <br />Costomise how your product looks </p>
+        </div>
+            <!--back this project buttons-->
+          <div class="span12 back-btn">
+              <button class="btn featbtn featbtn-text">Back this feather: $1000</button>
+
+          </div>
+      </div>
+
+        <div class="row-fluid section5">
+        <div class="span12">
+            <h1>Associate Founder</h1>
+            <p class="busSub">Own all mobiCost features and then more</p>
+            <p>Awesome is in your DNA. You own all features of mobiCost and belive in their potential
+            <br />You get the earliest access to all features and your feedback is key </p>
+        </div>
+            <!--back this project buttons-->
+          <div class="span12 back-btn">
+              <button class="btn featbtn featbtn-text">Back this feather: $500</button>
+
+          </div>
+      </div>
+
+        <div class="row-fluid section5">
+        <div class="span12">
+            <h1>Co - Contributer</h1>
+            <p class="busSub">Do you strongly believe in this vison. Recieive regular updates from the team</p>
+            <p>Get all rewards above. Plus, a link to your companys or profile which appears on mobiCost home page<br />
+            Costomise how your product looks </p>
+        </div>
+            <!--back this project buttons-->
+          <div class="span12 back-btn">
+              <button class="btn featbtn featbtn-text">Back this feather: $2000</button>
+
+          </div>
+      </div>
+
+
+        <!--============ end bussines features ========-->
       <!-- for the FAQ we introduce a little bit of js, using the accordum -->
       <div class="row-fluid faq">
         <div class="span10 offset1">
@@ -490,8 +668,8 @@
         </div>
       </div>
     </div>
-
-      <script type="text/javascript">
+    </div>
+     <!-- <script type="text/javascript">
           $('.carousel').on('slid', function () {
               if ($('#a').hasClass('active')) {
                   $('body').css('background-color', '#C8B3B3');
@@ -512,7 +690,7 @@
           });
           
 
-      </script>
+      </script>-->
   </body>
 </html>
 
