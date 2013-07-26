@@ -1,7 +1,8 @@
 var express = require('express'),
 fs = require('fs');
 
-var app = express.createServer(express.logger());
+//var app = express.createServer(express.logger());
+var app = express();
 
 app.get('/', function(request, response) {
  
